@@ -22,9 +22,9 @@ noBtn.addEventListener("mouseover", () => {
     const maxX = wrapperRect.width - noBtnRect.width;
     const maxY = wrapperRect.height - noBtnRect.height;
 
-    // Ensure randomX and randomY are within the wrapper bounds
-    const randomX = Math.min(Math.floor(Math.random() * maxX), maxX);
-    const randomY = Math.min(Math.floor(Math.random() * maxY), maxY);
+    // Get a random position for the "No" button within bounds
+    const randomX = Math.random() * maxX;
+    const randomY = Math.random() * maxY;
 
     noBtn.style.left = randomX + "px";
     noBtn.style.top = randomY + "px";
