@@ -38,8 +38,9 @@ body {
 }
 
 .btn-group {
+    position: relative; /* Set position relative for positioning child elements absolute */
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 15px;
 }
 
@@ -73,6 +74,7 @@ button:focus {
     background-color: #ff4d4d;
     color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: top 0.3s, left 0.3s; /* Smooth transition for moving */
 }
 
 .no-btn:hover {
